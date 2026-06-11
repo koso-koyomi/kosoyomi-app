@@ -117,6 +117,16 @@
       "<p>" + esc(main.sanctuary.text) + "</p>" +
       "</div></section>";
 
+    /* 4.5. 研究室の備品棚 */
+    html += '<section class="section"><h2 class="section-title">研究室の備品棚</h2>' +
+      '<p class="section-sub">——観測のそばに置くもの　<span class="pr-badge">PR</span></p>' +
+      '<div class="section-body"><div class="sonae-grid">';
+    KOSO_AFFIL.forEach(function (item) {
+      html += '<div class="sonae-item">' + item.html +
+        '<p class="sonae-label">' + esc(item.label) + '</p></div>';
+    });
+    html += '</div></div></section>';
+
     /* 5. 今宵の月と今週のひとこと */
     html += '<section class="section"><h2 class="section-title">今宵の月</h2>' +
       '<div class="section-body">' +

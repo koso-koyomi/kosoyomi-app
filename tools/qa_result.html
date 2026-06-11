@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head><meta charset="UTF-8"><title>QA: 診断結果の自動表示（検証用・公開対象外）</title>
+<style>body{margin:0}iframe{width:375px;height:7000px;border:0;display:block}</style>
+</head>
+<body>
+<iframe src="/index.html"></iframe>
+<script>
+  // 検証専用: index.html を読み込み、サンプル入力で診断を自動実行して結果を表示する
+  var f = document.querySelector("iframe");
+  f.onload = function () {
+    var d = f.contentDocument;
+    d.querySelector("#kanaName").value = "やまだ はなこ";
+    d.querySelector("#birthY").value = "1985";
+    d.querySelector("#birthM").value = "4";
+    d.querySelector("#birthD").value = "12";
+    d.querySelector("#startBtn").click();
+  };
+</script>
+</body>
+</html>

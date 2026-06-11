@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>古層診断｜あなたの名と、月のリズム — 古層の暦</title>
+<meta name="description" content="世界の神話・月の暦・名前の音韻から、あなたに眠る十二の古層を観測する無料診断。30秒・登録不要。入力は端末内で処理され、送信も保存もされません。">
+<meta property="og:title" content="古層診断｜あなたの名と、月のリズム">
+<meta property="og:description" content="名の音韻と生まれた日のリズムから、あなたに眠る十二の古層を観測する。30秒・登録不要。">
+<meta property="og:image" content="https://koso-koyomi.example.com/og/site.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-mark" id="siteMark" aria-hidden="true"></div>
+  <p class="site-name">古層の暦<span class="site-sub">｜月と暮らしの研究室</span></p>
+</header>
+
+<main>
+
+  <section class="hero">
+    <p class="hero-label">無料診断・30秒・登録不要</p>
+    <h1>古層診断</h1>
+    <p class="hero-subtitle">あなたの名と、月のリズム</p>
+
+    <blockquote class="hook">
+      「お母さん」と呼ばれ続けて、<br>
+      自分の名前を最後に呼ばれたのがいつか、思い出せない——<br>
+      <span class="hook-strong">この診断は、あなたの名の音韻から始まる。</span>
+    </blockquote>
+
+    <p class="intro">
+      世界の神話と月の暦から十二の古層を定め、<br class="pc-only">
+      名の音韻と生まれた日のリズムで照合する。<br>
+      観測されるのは、主古層と裏古層——百四十四通りのうちの一枚。
+    </p>
+  </section>
+
+  <section class="form-card" id="formCard">
+    <h2 class="form-title">観測票</h2>
+
+    <div class="field">
+      <label for="kanaName">お名前（ひらがな・フルネーム）</label>
+      <input type="text" id="kanaName" inputmode="kana" autocomplete="off"
+             placeholder="やまだ はなこ">
+    </div>
+
+    <div class="field">
+      <label>生年月日</label>
+      <div class="birth-row">
+        <select id="birthY" aria-label="年"></select><span class="birth-unit">年</span>
+        <select id="birthM" aria-label="月"></select><span class="birth-unit">月</span>
+        <select id="birthD" aria-label="日"></select><span class="birth-unit">日</span>
+      </div>
+    </div>
+
+    <p class="form-error" id="formError" role="alert" hidden></p>
+
+    <button type="button" class="btn btn-primary" id="startBtn">観測を始める</button>
+
+    <p class="privacy-note">
+      入力は端末内で処理され、氏名・生年月日は<strong>送信も保存もされません</strong>。
+    </p>
+  </section>
+
+  <div class="analyzing" id="analyzing" hidden>
+    <div class="analyzing-ring" aria-hidden="true"></div>
+    <p>名の音韻を照合しています——</p>
+  </div>
+
+  <section class="result" id="result" hidden aria-live="polite"></section>
+
+  <!--
+    《研究室の備品棚》設置枠（収益化フェーズ3まで非表示のまま）
+    設置時は必ず先頭に「#PR（アフィリエイトリンクを含みます）」を明記すること。
+    高額商品・健康/医療/金運の効果を示唆する商品説明は禁止（設計書§6ガード）。
+  <section class="shelf">
+    <h2>研究室の備品棚 <span class="pr-tag">#PR（アフィリエイトリンクを含みます）</span></h2>
+  </section>
+  -->
+
+</main>
+
+<footer class="site-footer">
+  <p>入力は端末内で処理され、氏名・生年月日は送信も保存もされません。</p>
+  <p>本診断は<strong>神話と象徴をモチーフとした創作研究プロジェクト（エンタメ）です</strong>。<br>
+     効果・効能を保証するものではありません。</p>
+  <p class="footer-x"><a id="footerX" href="https://x.com/koso_koyomi" target="_blank" rel="noopener">X：古層の暦｜毎朝7時、月と暮らしの研究室</a></p>
+  <p class="copyright">© 古層の暦</p>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/data.js"></script>
+<script src="js/logic.js"></script>
+<script src="js/emblems.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

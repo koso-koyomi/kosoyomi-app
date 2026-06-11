@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>OGP render template</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #0B0E1A; overflow: hidden; }
+  svg { display: block; width: 1200px; height: 675px; }
+</style>
+</head>
+<body>
+<!-- tools/render_og.py がヘッドレスChromeで ?i=0..11 / ?i=site を開きスクリーンショットする -->
+<script src="js/data.js"></script>
+<script src="js/logic.js"></script>
+<script src="js/emblems.js"></script>
+<script>
+  var p = new URLSearchParams(location.search).get("i");
+  var idx = (p === "site" || p === null) ? -1 : parseInt(p, 10);
+  document.body.innerHTML = kosoOgSvg(idx);
+</script>
+</body>
+</html>

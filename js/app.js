@@ -122,8 +122,7 @@
       '<p class="section-sub">——観測のそばに置くもの　<span class="pr-badge">PR</span></p>' +
       '<div class="section-body"><div class="sonae-grid">';
     KOSO_AFFIL.forEach(function (item) {
-      html += '<div class="sonae-item">' + item.html +
-        '<p class="sonae-label">' + esc(item.label) + '</p></div>';
+      html += '<div class="sonae-item">' + item.html + '</div>';
     });
     html += '</div></div></section>';
 

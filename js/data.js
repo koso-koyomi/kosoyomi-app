@@ -391,24 +391,18 @@ const KOSO_MOON_SPECIAL = {
   }
 };
 
-/* 主古層と裏古層が同じ層だったときの補記（144通りのうち12例） */
-const KOSO_SAME_NOTE = "観測補記——主古層と裏古層が同じ層を指した。百四十四通りのうち十二例だけの、源がひとつの真っ直ぐな型である。表で使う力と、人に見せない場所で使う力が、同じ泉から汲まれている。";
-
-/* ─── 研究室の備品棚（楽天アフィリエイト）───
-   リンク・画像URLは楽天アフィリエイト発行のものをそのまま使用。
-   追加・変更は label と html を差し替えるだけ。
-   ─────────────────────────────────────────── */
+/* ─── 研究室の備品棚（楽天アフィリエイト） ─── */
 const KOSO_AFFIL = [
   {
-    label: "お香",
-    html: `<a href="https://hb.afl.rakuten.co.jp/ichiba/54d0057f.3e2dcc86.54d00580.35db1b75/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnagomikobo%2Fsenko-yd0088_j%2F&link_type=pict&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9" target="_blank" rel="nofollow sponsored noopener"><img src="https://hbb.afl.rakuten.co.jp/hgb/54d0057f.3e2dcc86.54d00580.35db1b75/?me_id=1317441&item_id=10004451&pc=https%3A%2F%2Fimage.rakuten.co.jp%2Fnagomikobo%2Fcabinet%2Fthumbs%2Fsenko1%2Fkyooko_4.jpg%3F_ex%3D240x240&s=240x240&t=pict" alt="お香" loading="lazy"></a>`
+    html: `<a href="https://hb.afl.rakuten.co.jp/ichiba/54d0057f.3e2dcc86.54d00580.35db1b75/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnagomikobo%2Fsenko-yd0088_j%2F&link_type=pict&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9" target="_blank" rel="nofollow sponsored noopener"><img src="https://hbb.afl.rakuten.co.jp/hgb/54d0057f.3e2dcc86.54d00580.35db1b75/?me_id=1317441&item_id=10004451&pc=https%3A%2F%2Fimage.rakuten.co.jp%2Fnagomikobo%2Fcabinet%2Fthumbs%2Fsenko1%2Fkyooko_4.jpg%3F_ex%3D240x240&s=240x240&t=pict" alt="" loading="lazy"></a>`
   },
   {
-    label: "ハーブティー",
-    html: `<a href="https://hb.afl.rakuten.co.jp/ichiba/54d018a9.8db44d1b.54d018aa.c712a917/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnatural-riddim%2Fherbtea-00z%2F&link_type=pict&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9" target="_blank" rel="nofollow sponsored noopener"><img src="https://hbb.afl.rakuten.co.jp/hgb/54d018a9.8db44d1b.54d018aa.c712a917/?me_id=1235739&item_id=10000049&pc=https%3A%2F%2Fimage.rakuten.co.jp%2Fnatural-riddim%2Fcabinet%2F00953108%2F04978232%2Fe0003.jpg%3F_ex%3D240x240&s=240x240&t=pict" alt="ハーブティー" loading="lazy"></a>`
+    html: `<a href="https://hb.afl.rakuten.co.jp/ichiba/54d018a9.8db44d1b.54d018aa.c712a917/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnatural-riddim%2Fherbtea-00z%2F&link_type=pict&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9" target="_blank" rel="nofollow sponsored noopener"><img src="https://hbb.afl.rakuten.co.jp/hgb/54d018a9.8db44d1b.54d018aa.c712a917/?me_id=1235739&item_id=10000049&pc=https%3A%2F%2Fimage.rakuten.co.jp%2Fnatural-riddim%2Fcabinet%2F00953108%2F04978232%2Fe0003.jpg%3F_ex%3D240x240&s=240x240&t=pict" alt="" loading="lazy"></a>`
   },
   {
-    label: "天然石",
-    html: `<a href="https://hb.afl.rakuten.co.jp/ichiba/54d01c83.490ba2eb.54d01c84.4dfa972d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcicib%2Fe1-2%2F&link_type=pict&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9" target="_blank" rel="nofollow sponsored noopener"><img src="https://hbb.afl.rakuten.co.jp/hgb/54d01c83.490ba2eb.54d01c84.4dfa972d/?me_id=1319439&item_id=10003314&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Fcicib%2Fcabinet%2Ftop1-1080.jpg%3F_ex%3D240x240&s=240x240&t=pict" alt="天然石" loading="lazy"></a>`
+    html: `<a href="https://hb.afl.rakuten.co.jp/ichiba/54d01c83.490ba2eb.54d01c84.4dfa972d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcicib%2Fe1-2%2F&link_type=pict&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9" target="_blank" rel="nofollow sponsored noopener"><img src="https://hbb.afl.rakuten.co.jp/hgb/54d01c83.490ba2eb.54d01c84.4dfa972d/?me_id=1319439&item_id=10003314&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Fcicib%2Fcabinet%2Ftop1-1080.jpg%3F_ex%3D240x240&s=240x240&t=pict" alt="" loading="lazy"></a>`
   }
 ];
+
+/* 主古層と裏古層が同じ層だったときの補記（144通りのうち12例） */
+const KOSO_SAME_NOTE = "観測補記——主古層と裏古層が同じ層を指した。百四十四通りのうち十二例だけの、源がひとつの真っ直ぐな型である。表で使う力と、人に見せない場所で使う力が、同じ泉から汲まれている。";
